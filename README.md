@@ -16,7 +16,7 @@ In building this application, we learned many things, notably: how to implement 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Contributing](#Contributing)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Tests](#Tests)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Deployed-Link](#Deployed-Link)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Questions](#Questions)
@@ -63,17 +63,11 @@ From log in, the user will be redirected to their profile page, where they are g
 In order to contribute, one must fork their repository and create a pull request.
 
 
-<a id="Tests"></a>
-## Tests ⚖️
-
-N/A
-
-
-
+<a id="Deployed-Link"></a>
+## Deployed Link 📲
+[AnyYes](https://anyyes-3bf9b8d1cf29.herokuapp.com/)
 
 <a id="Questions"></a>
 ## Questions 📭
 
 Please enjoy my work at my GitHub, @[mintyry](https://github.com/mintyry).
-
-For any additional inquiries, please [email me](mailto:none@nomail.com).
