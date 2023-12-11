@@ -65,7 +65,7 @@ In order to contribute, one must fork their repository and create a pull request
 
 <a id="Deployed-Link"></a>
 ## Deployed Link 📲
-[AnyYes](https://anyyes-3bf9b8d1cf29.herokuapp.com/)
+Please enjoy your experience at [AnyYes](https://anyyes-3bf9b8d1cf29.herokuapp.com/)!
 
 <a id="Questions"></a>
 ## Questions 📭
