@@ -1,81 +1,79 @@
+
 # AnyYes
 
-## Description - 💠
-This application is a full stack e-commerce site that allows the user to buy and sell retro gaming consoles and games.
-* used multer to allow the user to upload photos when making a listing and also, multer allows us to save the images as blob to the database and render them on screen as base64
-* used stripe so that the user is able to check out and purchase the item of their choice
-This project uses dotenv and a config folder with a connection js file.
-* used Sequelize and mySQL2 to create a database using javascript
-* used handlebars with express session, and express handlebars to dynamically generate HTML from a views folder
-* used Bulma CSS and Splidejs for CSS framework and image carousel.
-* added the functionality for a user to log in and out and save cookies
-* all passwords are hashed using bcrypt
-* used seeds to seed user data to be able to test the application before production
-* used node.js
-* used express to allow the user to do CRUD methods on the website
+
+## Description 📰
+
+AnyYes is a Customer-to-Customer (C2C) retro-gaming e-commerce application. Although the primary motivator to make this app was to put our knowledge of front and back-end software development to work, this specific idea originated from collaborator Sal, who pointed out that there isn't an e-commerce app in the retro-gaming sector, so we decided to make one dedicated to that niche, also building on the C2C aspect of it, allowing users of the site to both buy AND sell retro games and consoles. This solves the problem for the retro-gaming demographic/audience; whereas they once did not have a dedicated or streamlined channel to buy these products, AnyYes provides them that opportunity.  
+In building this application, we learned many things, notably: how to implement Stripe to process payments, how to implement multer to allow users to upload photos of their products, more knowledge on Bulma CSS, and a new CSS framework to utilize image carousels via Splidejs. Beyond just these libraries, we also got to put into real practice, the solid foundation and flow to connect back and front-end together utilizing Sequelize and Handlebars.
+
+## Table of Contents
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Installation](#Installation)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Usage](#Usage)
 
 
-## Table of Contents - 📋
-* [Installation](#installation---☢️)
-* [Usage](#usage---💎)
-* [How to Contribute](#how-to-contribute---🍴)
-* [Test](#test---🧪)
-* [Preview Video](#preview-video---📼)
-* [Preview Photo](#preview-photo---📸)
-* [Deployed App](#deployed-app---📲)
-* [Credits](#credits---🤝)
-* [Contributors](#contributors---💪)
-* [Questions](#questions---❓)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Contributing](#Contributing)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Tests](#Tests)
 
 
-## Usage - 💎
-Please run npm init -y and npm i to install dependencies used.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Questions](#Questions)
 
-## How to Contribute - 🍴
-You must install node, Sequelize, mysql2, express-session, express-handlebars, dotenv, connect-session-sequelize, bcrypt, eslint, stripe, multer, uuid using init -y and npm i to download all dependencies.
 
-## Installation - ☢️
- You must run npm i to download the correct packages.
+<a id="Installation"></a>
+## Installation 🔌
 
-## Test - 🧪
-You must run mysql -u root then source the schema and use the db
-You must npm run seed to seed the database
-You must npm run start to the open the application view localhost{port}
+In order to install, please run `npm i`.
 
-## Preview Video - 📼
-https://github.com/pToum21/anyYes/assets/138056441/0904d40d-3ad2-4217-b29f-5beb79ace532
 
-## Preview Photo - 📸
-![AnyYes preview](./public/photos/AnyYes%20-%20Google%20Chrome%2012_7_2023%203_09_16%20PM.png)
+<a id="Usage"></a>
+## Usage 🧮
 
-## Deployed Application - 📲
-https://anyyes-3bf9b8d1cf29.herokuapp.com/
+In order to use this app, please run `npm start`.
+If you would like to pre-seed the application with sample content, please run `npm run seed`.
 
-## Credits - 🤝
-D. Murphy, M. Meyers, Xpert AI, Stack Overflow
+Upon landing on the homepage of AnyYes, the user will be presented with the navigation bar with options to view all listings available for games and consoles, as well as the option to log in, along with an aesthetically-pleasing image-carousel of video-game pixel art.
+![AnyYes homepage](./public/photos/AY-home.png)
 
-Carousel art:
+Demonstrating our site's responsiveness, in mobile view, upon scrolling down a bit, the user will see the three latest listings that were created by users, as well as all the other listings that came before.
+![AnyYes mobile three recent listings](./public/photos/AY-listings.png)
+![AnyYes all listings](./public/photos/AY-fulllistings.png)
 
-[https://wall.alphacoders.com/big.php?i=1298880](https://wall.alphacoders.com/big.php?i=1298880)
+The user can also search for any listings via a keyword:
+![AnyYes search](./public/photos/AY-searchbar.png)
+![AnyYes search results](./public/photos/AY_searchresults.png)
 
-[https://www.deviantart.com/1tzah/art/Zelda-fanart-Itzah-905057250](https://www.deviantart.com/1tzah/art/Zelda-fanart-Itzah-905057250)
+Upon viewing any single listing, the user can see key details about the product and can add the item to their cart.
+![AnyYes add to cart](./public/photos/AY-individual-addcart.png)
 
-[https://wall.alphacoders.com/big.php?i=1281520](https://wall.alphacoders.com/big.php?i=1281520)
 
-[https://wall.alphacoders.com/big.php?i=1259209](https://wall.alphacoders.com/big.php?i=1259209)
+However, to assume full capabilities of the site, like actually viewing one's cart and making purchases or listings, all one has to do is sign up or log in, done via our login modal.
+![AnyYes modal for logging in or signing up](./public/photos/AY-login.png)
 
-[https://wall.alphacoders.com/big.php?i=1129294](https://wall.alphacoders.com/big.php?i=1129294)
+From log in, the user will be redirected to their profile page, where they are greeted personally, can see any listings they made and any orders for any purchases they've made, as well as the option to create a listing to sell something of theirs!
 
-## Contributors - 💪
-* @mintyry
-* @pToum21
-* @SalGonzalez151
-* @pashag123
 
-## Questions - ❓
-Feel Free to contact us at:
 
-- pey3moo3@gmail.com or [ptoum21](https://github.com/ptoum21)
-- [mintyry](https://github.com/mintyry)
-- [SalGonzalez151](https://github.com/SalGonzalez151)
-- [pashag123](https://github.com/pashag123)
+
+<a id="Contributing"></a>
+## Contributing 🍴
+
+In order to contribute, one must fork their repository and create a pull request.
+
+
+<a id="Tests"></a>
+## Tests ⚖️
+
+N/A
+
+
+
+
+<a id="Questions"></a>
+## Questions 📭
+
+Please enjoy my work at my GitHub, @[mintyry](https://github.com/mintyry).
+
+For any additional inquiries, please [email me](mailto:none@nomail.com).
