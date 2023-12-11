@@ -34,22 +34,22 @@ In order to install, please run `npm i`.
 In order to use this app, please run `npm start`.
 If you would like to pre-seed the application with sample content, please run `npm run seed`.
 
-Upon landing on the homepage of AnyYes, the user will be presented with the navigation bar with options to view all listings available for games and consoles, as well as the option to log in, along with an aesthetically-pleasing image-carousel of video-game pixel art.
+Upon landing on the homepage of AnyYes, the user will be presented with the navigation bar with options to view all listings available for games and consoles, as well as the option to log in, along with an aesthetically-pleasing image-carousel of video-game pixel art.  
 ![AnyYes homepage](./public/photos/AY-home.png)
 
-Demonstrating our site's responsiveness, in mobile view, upon scrolling down a bit, the user will see the three latest listings that were created by users, as well as all the other listings that came before.
+Demonstrating our site's responsiveness, in mobile view, upon scrolling down a bit, the user will see the three latest listings that were created by users, as well as all the other listings that came before.  
 ![AnyYes mobile three recent listings](./public/photos/AY-listings.png)
 ![AnyYes all listings](./public/photos/AY-fulllistings.png)
 
-The user can also search for any listings via a keyword:
+The user can also search for any listings via a keyword:  
 ![AnyYes search](./public/photos/AY-searchbar.png)
 ![AnyYes search results](./public/photos/AY_searchresults.png)
 
-Upon viewing any single listing, the user can see key details about the product and can add the item to their cart.
+Upon viewing any single listing, the user can see key details about the product and can add the item to their cart.  
 ![AnyYes add to cart](./public/photos/AY-individual-addcart.png)
 
 
-However, to assume full capabilities of the site, like actually viewing one's cart and making purchases or listings, all one has to do is sign up or log in, done via our login modal.
+However, to assume full capabilities of the site, like actually viewing one's cart and making purchases or listings, all one has to do is sign up or log in, done via our login modal.  
 ![AnyYes modal for logging in or signing up](./public/photos/AY-login.png)
 
 From log in, the user will be redirected to their profile page, where they are greeted personally, can see any listings they made and any orders for any purchases they've made, as well as the option to create a listing to sell something of theirs!
