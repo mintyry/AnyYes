@@ -16,8 +16,9 @@ In building this application, we learned many things, notably: how to implement 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Contributing](#Contributing)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Deployed-Link](#Deployed-Link)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Deployed-Link](#Deployed-Application)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Credits](#Credits)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ➣ [Questions](#Questions)
 
@@ -52,9 +53,16 @@ Upon viewing any single listing, the user can see key details about the product 
 However, to assume full capabilities of the site, like actually viewing one's cart and making purchases or listings, all one has to do is sign up or log in, done via our login modal.  
 ![AnyYes modal for logging in or signing up](./public/photos/AY-login.png)
 
-From log in, the user will be redirected to their profile page, where they are greeted personally, can see any listings they made and any orders for any purchases they've made, as well as the option to create a listing to sell something of theirs!
+From log in, the user will be redirected to their profile page, where they are greeted personally, can see any listings they made and any orders for any purchases they've made, as well as the option to create a listing to sell something of theirs!  
+![Profile page to see user's listings and orders](./public/photos/AY_profile.png)  
+![Make a listing from profile page](./public/photos/AY_addlisting.png)  
 
+Shopping is made easy! Click add to cart, view your cart, and click checkout to make a payment!
+Once payment is made, the user will be redirected to the orders section in their profile page.  
+![User's cart](./public/photos/AY_cart.png)  
+![Pay via Stripe](./public/photos/AY-stripe.png)  
 
+Please enjoy AnyYes!
 
 
 <a id="Contributing"></a>
@@ -63,11 +71,32 @@ From log in, the user will be redirected to their profile page, where they are g
 In order to contribute, one must fork their repository and create a pull request.
 
 
-<a id="Deployed-Link"></a>
-## Deployed Link 📲
+<a id="Deployed-Application"></a>
+## Deployed Application 📲
 Please enjoy your experience at [AnyYes](https://anyyes-3bf9b8d1cf29.herokuapp.com/)!
+
+<a id="Credits"></a>
+## Credits - 🤝
+D. Murphy, M. Meyers, Xpert AI, Stack Overflow
+
+Carousel art:
+
+[https://wall.alphacoders.com/big.php?i=1298880](https://wall.alphacoders.com/big.php?i=1298880)
+
+[https://www.deviantart.com/1tzah/art/Zelda-fanart-Itzah-905057250](https://www.deviantart.com/1tzah/art/Zelda-fanart-Itzah-905057250)
+
+[https://wall.alphacoders.com/big.php?i=1281520](https://wall.alphacoders.com/big.php?i=1281520)
+
+[https://wall.alphacoders.com/big.php?i=1259209](https://wall.alphacoders.com/big.php?i=1259209)
+
+[https://wall.alphacoders.com/big.php?i=1129294](https://wall.alphacoders.com/big.php?i=1129294)
 
 <a id="Questions"></a>
 ## Questions 📭
 
-Please enjoy my work at my GitHub, @[mintyry](https://github.com/mintyry).
+Feel Free to contact the creators at:
+
+- [mintyry](https://github.com/mintyry)
+- [ptoum21](https://github.com/ptoum21)
+- [SalGonzalez151](https://github.com/SalGonzalez151)
+- [pashag123](https://github.com/pashag123)
