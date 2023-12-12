@@ -28,7 +28,7 @@ router.post('/file-upload', upload.single('image'), async (req, res) => {
             user_id
         } = req.body;
 
-
+// wrap 33-51 into the .then of sharp
 
         const newListing = await Listing.create({
             title,

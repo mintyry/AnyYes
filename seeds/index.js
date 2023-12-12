@@ -1,7 +1,6 @@
 const seedCategory = require('./category-seeds');
 const seedListing = require('./listing-seeds');
 const seedUser = require('./user-seeds');
-const seedOrder = require('./order-seeds');
 
 const sequelize = require('../config/connection');
 
@@ -18,8 +17,7 @@ const seedAll = async () => {
   await seedListing();
   console.log('\n----- LISTINGS SEEDED -----\n');
 
-  await seedOrder();
-  console.log('\n----- ORDERS SEEDED -----\n');
+
 
   // process.exit(0) ensures the Node.js process will terminate immediately and return the exit code to the operating system gracefully.
   process.exit(0);
