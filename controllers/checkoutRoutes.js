@@ -5,6 +5,7 @@ const withAuth = require('../utils/auth')
 
 // if MODE exists, it'll be on local host, otherwise heroku
 const YOUR_DOMAIN = process.env.MODE ? 'http://localhost:3001' : 'https://anyyes-com-7a95399acf53.herokuapp.com';
+// sk
 
 router.get('/', async (req, res) => {
     try {
