@@ -35,11 +35,13 @@
         <p class="my-2">{{price}}</p>
         <p class="my-2">{{condition}} {{category.category_name}}</p>
 
-        {{!-- image; if sold, is greyed out --}}
-        {{#if sold}}
-        <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
-        {{else}}
-        <img id="listingImage" src="data:image/png;base64,{{image}}" />
+        {{#if image}}
+            {{!-- image; if sold, is greyed out --}}
+            {{#if sold}}
+            <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
+            {{else}}
+            <img id="listingImage" src="data:image/png;base64,{{image}}" />
+            {{/if}}
         {{/if}}
     </div>
 
@@ -68,10 +70,12 @@
         <p class="my-2">{{price}}</p>
         <p class="my-2">{{condition}} {{category.category_name}}</p>
 
-        {{#if sold}}
-        <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
-        {{else}}
-        <img id="listingImage" src="data:image/png;base64,{{image}}" />
+        {{#if image}}
+            {{#if sold}}
+            <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
+            {{else}}
+            <img id="listingImage" src="data:image/png;base64,{{image}}" />
+            {{/if}}
         {{/if}}
 
     </div>

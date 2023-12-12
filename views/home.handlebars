@@ -45,10 +45,12 @@
             <p style="height:10%" class="my-2">${{price}}</p>
             <p style="height:10%" class="my-2">{{listing.condition}} {{category.category_name}}</p>
             <div class="image is-128x128  my-2" style="height:50%; display: block; margin: auto;">
-                {{#if sold}}
-                <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
-                {{else}}
-                <img id="listingImage" src="data:image/png;base64,{{image}}" />
+                {{#if image}}
+                    {{#if sold}}
+                    <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
+                    {{else}}
+                    <img id="listingImage" src="data:image/png;base64,{{image}}" />
+                    {{/if}}
                 {{/if}}
             </div>
         </div>
@@ -79,11 +81,13 @@
         <p class="my-2">${{price}}</p>
         <p class="my-2">{{condition}} {{category.category_name}}</p>
         <div class="image is-128x128  my-1" style=" display: block; margin: auto;">
-            {{#if sold}}
-            <img id="listingImage" style="filter: grayscale(1); max-width: 100%;"
-                src="data:image/png;base64,{{image}}" />
-            {{else}}
-            <img id="listingImage" style="max-width: 100%;" src="data:image/png;base64,{{image}}" />
+            {{#if image}}
+                {{#if sold}}
+                <img id="listingImage" style="filter: grayscale(1); max-width: 100%;"
+                    src="data:image/png;base64,{{image}}" />
+                {{else}}
+                <img id="listingImage" style="max-width: 100%;" src="data:image/png;base64,{{image}}" />
+                {{/if}}
             {{/if}}
         </div>
     </div>
