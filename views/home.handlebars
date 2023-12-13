@@ -47,9 +47,9 @@
             <div class="image is-128x128  my-2" style="height:50%; display: block; margin: auto;">
                 {{#if image}}
                     {{#if sold}}
-                    <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
+                    <img id="listingImage" style="filter: grayscale(1);" src="data:image/webp;base64,{{image}}" />
                     {{else}}
-                    <img id="listingImage" src="data:image/png;base64,{{image}}" />
+                    <img id="listingImage" src="data:image/webp;base64,{{image}}" />
                     {{/if}}
                 {{/if}}
             </div>
@@ -84,9 +84,9 @@
             {{#if image}}
                 {{#if sold}}
                 <img id="listingImage" style="filter: grayscale(1); max-width: 100%;"
-                    src="data:image/png;base64,{{image}}" />
+                    src="data:image/webp;base64,{{image}}" />
                 {{else}}
-                <img id="listingImage" style="max-width: 100%;" src="data:image/png;base64,{{image}}" />
+                <img id="listingImage" style="max-width: 100%;" src="data:image/webp;base64,{{image}}" />
                 {{/if}}
             {{/if}}
         </div>

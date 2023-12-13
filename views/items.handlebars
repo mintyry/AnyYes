@@ -38,9 +38,9 @@
         {{#if image}}
             {{!-- image; if sold, is greyed out --}}
             {{#if sold}}
-            <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
+            <img id="listingImage" style="filter: grayscale(1);" src="data:image/webp;base64,{{image}}" />
             {{else}}
-            <img id="listingImage" src="data:image/png;base64,{{image}}" />
+            <img id="listingImage" src="data:image/webp;base64,{{image}}" />
             {{/if}}
         {{/if}}
     </div>
@@ -72,9 +72,9 @@
 
         {{#if image}}
             {{#if sold}}
-            <img id="listingImage" style="filter: grayscale(1);" src="data:image/png;base64,{{image}}" />
+            <img id="listingImage" style="filter: grayscale(1);" src="data:image/webp;base64,{{image}}" />
             {{else}}
-            <img id="listingImage" src="data:image/png;base64,{{image}}" />
+            <img id="listingImage" src="data:image/webp;base64,{{image}}" />
             {{/if}}
         {{/if}}
 

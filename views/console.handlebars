@@ -14,7 +14,9 @@
     <div class="is-centered">
         {{!-- image --}}
         <figure class="is-centered" style=" max-width: 640px;">
-            <img id="listingImage" src="data:image/png;base64,{{image}}" alt="retro gaming console"/>
+            {{#if image}}
+            <img id="listingImage" src="data:image/webp;base64,{{image}}" alt="retro gaming console" />
+            {{/if}}
         </figure>
         {{!-- console name --}}
         <p class="px-1" style="background-color: aquamarine; color: black;">{{console_name}} by {{console_brand}} from

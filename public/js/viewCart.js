@@ -28,7 +28,7 @@ for (i = 0; i < userCart.length; i++) {
     </strong>
     </a>
     <p class="my-2">${userCart[i].price}</p>
-    <img id="listingImage" src="data:image/jpeg;base64,${userCart[i].image}" class="image is-128x128 my-2" style=" display: block; margin: auto;" />
+    <img id="listingImage" src="data:image/webp;base64,${userCart[i].image}" class="image is-128x128 my-2" style=" display: block; margin: auto;" />
     <button class="button has-background-primary"><a href="/checkout?name=${userCart[i].title}" class="checkout-btn" style="color:black !important; font-family: arial">Checkout</a></button>
     </div>
     </section>

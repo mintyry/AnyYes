@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Listing } = require('../../models');
 const multer = require('multer');
+const sharp = require('sharp');
 
 //multer setup
 const storage = multer.memoryStorage();
@@ -25,30 +26,33 @@ router.post('/file-upload', upload.single('image'), async (req, res) => {
             color,
             is_special_edition,
             category_id,
-            user_id
         } = req.body;
 
-// wrap 33-51 into the .then of sharp
+        // wrap 33-51 into the .then of sharp//nvm
+        await sharp(fileBuffer)
+            .resize(300)
+            .toFormat('webp')
+            .toBuffer()
+            .then(async (resizedBuffer) => {
+                await Listing.create({
+                    title,
+                    image: resizedBuffer,
+                    price,
+                    description,
+                    date_created,
+                    game_name,
+                    console_name,
+                    console_brand,
+                    year,
+                    condition,
+                    color,
+                    is_special_edition,
+                    category_id,
+                    user_id: req.session.user_id
+                });
+                res.status(201).end();
+            });
 
-        const newListing = await Listing.create({
-            title,
-            image: fileBuffer,
-            price,
-            description,
-            date_created,
-            game_name,
-            console_name,
-            console_brand,
-            year,
-            condition,
-            color,
-            is_special_edition,
-            category_id,
-            user_id: req.session.user_id
-        });
-
-        res.status(200).json({ listing: newListing });
-        res.end();
     } catch (error) {
 
         res.status(500).json({ error: error.message });
