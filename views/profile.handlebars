@@ -37,47 +37,63 @@
 {{!-- User's orders --}}
 <section class="box bbdouble" id="order-section">
   <h2 class="title  has-background-info has-text-white p-3">Here are your past orders:</h2>
-  <div class="columns is-multiline" id="order-section">
+  <div id="order-section">
 
     {{#each myOrders}}
 
-    <div class="column is-full">
-      <div class="box is-flex is-justify-content-space-between has-text-black" id="order-box">
-        <p>
-          {{#if (equal listing.game_name "N/A") }}
-          <a href="/category/{{listing.category.category_name}}/{{listing.id}}">
-            {{listing.console_name}} from {{listing.user.user_name}}
-          </a>
+    {{!-- <div class="column is-full"> --}}
+      <div class="columns is-multiline is-full box is-flex is-justify-content-space-between has-text-black"
+        id="order-box">
 
-          {{else}}
+        <div class="column">
+          <p>
+            {{#if (equal listing.game_name "N/A") }}
+            <a href="/category/{{listing.category.category_name}}/{{listing.id}}">
+              {{listing.console_name}} from {{listing.user.user_name}}
+            </a>
 
-          <a href="/category/{{listing.category.category_name}}/{{listing.id}}">
-            {{listing.game_name}} from {{listing.user.user_name}}
-          </a>
-          {{/if}}
-          </a>
-        </p>
-        <p>
-          Price: ${{listing.price}}
-        </p>
-        <p>
-          Order Number: {{reference_number}}
-        </p>
-        <p>
-          Purchased on: {{format_date created_at}}
-        </p>
+            {{else}}
 
+            <a href="/category/{{listing.category.category_name}}/{{listing.id}}">
+              {{listing.game_name}} from {{listing.user.user_name}}
+            </a>
+            {{/if}}
+            </a>
+          </p>
+        </div>
 
-        <p>Status:
-          {{#if status}}
-          Delivered
-          {{else}}
-          On it's way
-          {{/if}}
-        </p>
+        <div class="column">
+          <p>
+            Price:<br> ${{listing.price}}
+          </p>
+        </div>
+
+        <div class="column">
+          <p>
+            Order Number:<br> {{reference_number}}
+          </p>
+        </div>
+
+        <div class="column">
+          <p>
+            Purchased on:<br> {{format_date created_at}}
+          </p>
+        </div>
+
+        <div class="column">
+          <p>Status:<br>
+            {{#if status}}
+            Delivered
+            {{else}}
+            On it's way
+            {{/if}}
+          </p>
+        </div>
+
       </div>
 
-    </div>
+      {{!--
+    </div> --}}
     {{/each}}
   </div>
 </section>
