@@ -69,7 +69,10 @@ router.get('/:id', async (req, res) => {
 
         if (!foundListing) {
             return res.status(404).json({ message: 'Listing not found' });
-        }
+        };
+
+        const currentUser = req.session.user_id;
+        console.log(currentUser);
 
         // Send the image buffer along with other listing details
         res.status(200).json({
@@ -86,9 +89,11 @@ router.get('/:id', async (req, res) => {
                 condition: foundListing.condition,
                 color: foundListing.color,
                 is_special_edition: foundListing.is_special_edition,
+                sold:foundListing.sold,
                 category_id: foundListing.category_id,
                 user_id: foundListing.user_id,
-                image: foundListing.image ? foundListing.image.toString('base64') : null
+                image: foundListing.image ? foundListing.image.toString('base64') : null,
+                currentUser
             }
         });
     } catch (error) {
