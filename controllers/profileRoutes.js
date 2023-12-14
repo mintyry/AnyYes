@@ -23,7 +23,18 @@ router.get('/', async (req, res) => {
 
       let myListings = userListings.map(u => u.get({ plain: true }));
 
+      // move it here so orders render regardless if listings exist or not
+      const orderData = await Order.findAll({
+         where: {
+            user_id: req.session.user_id
+         },
+         include: [{
+            model: Listing,
+            include: [User, Category]
+         }]
+      })
 
+      let myOrders = orderData.map(u => u.get({ plain: true }));
 
       //if statement to render listings for user in profile, but if no listings exist, can still show user_name
 
@@ -38,20 +49,6 @@ router.get('/', async (req, res) => {
          });
 
          const userName = myListings[0].user.user_name;
-         const orderData = await Order.findAll({
-            where: {
-               user_id: req.session.user_id
-            },
-            include: [{
-               model: Listing,
-               include: [User, Category]
-            }]
-         })
-
-
-
-
-         let myOrders = orderData.map(u => u.get({ plain: true }));
 
 
          //if there is a listing, we will render myListings and userName to profile.hbs
@@ -63,7 +60,7 @@ router.get('/', async (req, res) => {
 
 
          // if no listing, pass empty array for myListings, userName will show
-         res.render('profile', { myListings: [], userName, myOrders: [], logged_in: req.session.logged_in })
+         res.render('profile', { myListings: [], userName, myOrders, logged_in: req.session.logged_in })
       }
    } catch (error) {
 
