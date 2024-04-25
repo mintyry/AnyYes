@@ -24,7 +24,7 @@ for (i = 0; i < userCart.length; i++) {
 
     <a href="/category/${category}/${userCart[i].id}">
     <strong>
-        <p class="my-2">${userCart[i].title}}</p>
+        <p class="my-2">${userCart[i].title}</p>
     </strong>
     </a>
     <p class="my-2">${userCart[i].price}</p>
